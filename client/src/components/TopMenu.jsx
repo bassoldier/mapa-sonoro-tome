@@ -5,12 +5,12 @@ import routes from '../routes';
 const TopMenu = () => {
     return (
         <>
-            <nav class="navMenu">
+            <nav className="navMenu">
                 {
                     routes.map((route, index) =>{
                         return(
                             
-                            <Link to="/">
+                            <Link key={index} to={route.path}>
                                 <i className="fas fa-tachometer-alt"></i>
                                 <span>{route.title}</span>
                             </Link>
@@ -21,7 +21,7 @@ const TopMenu = () => {
                     
                 <Link to="/">
                     <i className="fas fa-tachometer-alt"></i>
-                    <span>Home2</span>
+                    <span>Acerca de</span>
                 </Link>
                 <Link to="/">
                     <i className="fas fa-tachometer-alt"></i>
@@ -36,7 +36,7 @@ const TopMenu = () => {
                     <span>RRSS</span>
                 </Link>
                 
-                <div class="dot"></div>
+                <div className="dot"></div>
             </nav>
         </>
     
