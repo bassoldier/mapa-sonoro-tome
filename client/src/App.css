@@ -5,10 +5,19 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 25px;
+  color: #fddb3a;
+}
+
+h2 {
+  font-size: 18px;
+}
 
 body {
   background: #0E131A;
   font-family: "Montserrat", sans-serif;
+  padding-top: 70px;
 }
 
 header {
@@ -22,6 +31,7 @@ header {
   z-index: 99;
 }
 
+/* TOP MENU */
 
 .navMenu {
   position: absolute;
@@ -77,8 +87,8 @@ header {
 }
 
 .navMenu a:nth-child(3):hover ~ .dot {
-  -webkit-transform: translateX(200px);
-  transform: translateX(200px);
+  -webkit-transform: translateX(260px);
+  transform: translateX(260px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
@@ -99,4 +109,24 @@ header {
   transition: all 0.2s ease-in-out;
   opacity: 1;
 }
+
+
+/* MAP */
+
+.map-container{
+  background: linear-gradient(180deg, rgba(41, 47, 52, 0.6) 49.54%, rgba(41, 47, 52, 0) 86.23%);
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+  width: 100%;  
+}
+
+.descripcion-map{
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
 

@@ -1,6 +1,6 @@
 import Layout from "../layouts/Layout";
 
-const About = () => {
+const Contacto = () => {
     return(
         <>
             <Layout>
@@ -19,4 +19,4 @@ const About = () => {
     );
 }
 
-export default About;
+export default Contacto;

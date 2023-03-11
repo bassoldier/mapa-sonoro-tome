@@ -8,8 +8,7 @@ const TopMenu = () => {
             <nav className="navMenu">
                 {
                     routes.map((route, index) =>{
-                        return(
-                            
+                        return( 
                             <Link key={index} to={route.path}>
                                 <i className="fas fa-tachometer-alt"></i>
                                 <span>{route.title}</span>
@@ -18,24 +17,6 @@ const TopMenu = () => {
                         );
                     })
                 }
-                    
-                <Link to="/">
-                    <i className="fas fa-tachometer-alt"></i>
-                    <span>Acerca de</span>
-                </Link>
-                <Link to="/">
-                    <i className="fas fa-tachometer-alt"></i>
-                    <span>Blog</span>
-                </Link>
-                <Link to="/">
-                    <i className="fas fa-tachometer-alt"></i>
-                    <span>About</span>
-                </Link>
-                <Link to="/">
-                    <i className="fas fa-tachometer-alt"></i>
-                    <span>RRSS</span>
-                </Link>
-                
                 <div className="dot"></div>
             </nav>
         </>

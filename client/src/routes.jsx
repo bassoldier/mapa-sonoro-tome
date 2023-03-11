@@ -2,6 +2,7 @@
 
 import Home from './pages/Home';
 import About  from './pages/About';
+import Contacto from './pages/Contacto';
 
 const routes = [
     {
@@ -13,6 +14,11 @@ const routes = [
         path: "/about",
         element: <About />,
         title: "Acerca de"
+    },
+    {
+        path: "/contacto",
+        element: <Contacto />,
+        title: "Contacto"
     }
 ];
 
