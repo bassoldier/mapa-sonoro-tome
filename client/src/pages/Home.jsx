@@ -1,7 +1,9 @@
 import { useState } from 'react'
 
 import Layout from '../layouts/Layout'
+import HeroHome from '../components/HeroHome'
 import MapsGoogle from '../components/MapsGoogle'
+import { LoadScript} from "@react-google-maps/api";
 
 const Home = () => {
   const [count, setCount] = useState(0)
@@ -9,21 +11,15 @@ const Home = () => {
   return (
     <>
       <Layout>
-        
-        <MapsGoogle />
-        
-        <div className="descripcion-map">
-          <h1>Tomé Sonoro</h1>
-          <h2>
-            Experimenta los rincones de Tomé a través de tus oídos.
-          </h2>
-          
-          <button className="home-button" onClick={() => setCount(count + 1)}>
-            Click Me
-          </button>
-        </div>
+        <HeroHome />
+        { window.google === undefined ?
+          <LoadScript googleMapsApiKey='AIzaSyBuoqaV8Jt-wqWW4rY3MHySAWkv3fW5iyw'>
+            <MapsGoogle id_name = "mapa_principal" />
+          </LoadScript>
+          :
+          <MapsGoogle id_name = "mapa_principal" />
+        }
       </Layout>
-      
     </>
    
   )

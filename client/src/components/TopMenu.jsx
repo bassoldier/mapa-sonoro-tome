@@ -5,7 +5,7 @@ import routes from '../routes';
 const TopMenu = () => {
     return (
         <>
-            <nav className="navMenu">
+            <nav className="navMenu" data-aos="fade-down">
                 {
                     routes.map((route, index) =>{
                         return( 

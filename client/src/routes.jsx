@@ -14,11 +14,6 @@ const routes = [
         path: "/about",
         element: <About />,
         title: "Acerca de"
-    },
-    {
-        path: "/contacto",
-        element: <Contacto />,
-        title: "Contacto"
     }
 ];
 

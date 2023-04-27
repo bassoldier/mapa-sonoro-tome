@@ -1,8 +1,15 @@
 
 import React, { useState } from "react";
 import { GoogleMap, InfoWindow, LoadScript, Marker } from "@react-google-maps/api";
+import ModalInfo from './../components/ModalInfo'
 
-const MapComponent = () => {
+const GoogleMapComponent = () => {
+    return (
+      <button>I am a apple</button>
+    );
+}
+
+const MapComponent = ({id_name}) => {
     const initialMarkers = [
         {
             position: {
@@ -35,7 +42,11 @@ const MapComponent = () => {
 
     const containerStyle = {
         width: "100%",
-        height: "400px",
+        height: "600px",
+        disableDefaultUI: true,
+        mapTypeId: "hybrid",
+        
+
     }
 
     const center = {
@@ -58,9 +69,11 @@ const MapComponent = () => {
     }
 
     return (
-        <div className="map-container">
-            <LoadScript googleMapsApiKey='AIzaSyBuoqaV8Jt-wqWW4rY3MHySAWkv3fW5iyw'>
+        <div className="map-container"  data-aos="fade-down">
+
+                
                 <GoogleMap 
+                    id = {id_name}
                     mapContainerStyle={containerStyle} 
                     center={center} 
                     zoom={15}
@@ -85,7 +98,11 @@ const MapComponent = () => {
                         </Marker>
                     ))}
                 </GoogleMap>
-            </LoadScript>
+            <div className="etiqueta-map">
+                <p>Presiona sobre las ubicaciones marcadas para escuchar</p>
+            </div>
+            <ModalInfo />
+                
         </div>
         
     );
