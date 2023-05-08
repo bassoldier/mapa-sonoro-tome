@@ -4,14 +4,9 @@ import { GoogleMap, InfoWindow, LoadScript, MarkerF } from "@react-google-maps/a
 import ModalInfo from './../components/ModalInfo'
 import { initialMarkers } from "../data/data";
 
-const GoogleMapComponent = () => {
-    return (
-      <button>I am a apple</button>
-    );
-}
 
 const MapComponent = ({id_name}) => {
-    const [info, setInfo] = useState({"active" : false, "id_marker": null, "descripcion": "Descripcion test", "imagen": ""});
+    const [info, setInfo] = useState({"active" : false, "id_marker": null, "descripcion": "Descripcion test", "imagen": "", "audio": "", "titulo": ""});
     const [center, setCenter] = useState({
         lat: -36.6181625,
         lng: -72.9964699
@@ -45,10 +40,10 @@ const MapComponent = ({id_name}) => {
 
     const markerClicked = (marker, index, event) => {  
         if(info.id_marker == index) {
-            setInfo({"active" : false, "id_marker": null, "descripcion": "", "imagen": ""});
+            setInfo({"active" : false, "id_marker": null, "descripcion": "", "imagen": "", "audio": "", "titulo": ""});
         }
         else{
-            setInfo({"active" : true, "id_marker": index, "descripcion": "nueva descripcion test", "imagen": marker.image});
+            setInfo({"active" : true, "id_marker": index, "descripcion": marker.descripcion, "imagen": marker.image, "audio": marker.audio, "titulo": marker.titulo});
         }
         setCenter({
             lat: event.latLng.lat(),
@@ -109,6 +104,9 @@ const MapComponent = ({id_name}) => {
             {
                 info.active && <ModalInfo 
                     foto = {info.imagen}
+                    audio={info.audio}
+                    nombre={info.titulo}
+                    descripcion={info.descripcion}
                 />
             }
             

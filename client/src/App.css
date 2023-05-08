@@ -409,7 +409,7 @@ footer .items .cards .card{
   position: absolute;
 
   width: 100%;
-  height: 40%;
+  height: 35%;
   top: 50%;
 
   background: var(--ink-light);
@@ -422,4 +422,21 @@ footer .items .cards .card{
   line-height: 120%;
   text-align: left;
   color: var(--ink-medium);
+}
+
+.player-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+
+  width: 100%;
+  height: 15%;
+  top: 84.5%;
+
+  background: var(--ink-light);
+  /*background: red;*/
+
 }

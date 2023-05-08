@@ -1,5 +1,10 @@
 import casaPiedra from "./../assets/img/locations/casa_de_piedra.jpg"
 import aves from "./../assets/img/locations/aves.jpg"
+
+import audio_1 from "./../assets/audio/idea_1.mp3"
+import audio_2 from "./../assets/audio/idea_2.mp3"
+
+
 export const initialMarkers = [
     {
         position: {
@@ -8,7 +13,10 @@ export const initialMarkers = [
         },
         label: { color: "white", text: "Casa de Piedra" },
         draggable: false,
-        image: casaPiedra
+        image: casaPiedra,
+        audio: audio_1,
+        titulo: "Casa de Piedra",
+        descripcion: "Casa de Piedra el lugar mas hermoso del mundo mundia, quizás sus cretinos cerebrps humanos no alcanzan a dimensionar tal obra magna de la ingeniería"
     },
     {
         position: {
@@ -17,7 +25,10 @@ export const initialMarkers = [
         },
         label: { color: "white", text: "P1" },
         draggable: false,
-        image: aves
+        image: aves,
+        audio: audio_2,
+        titulo: "Punta de Parra",
+        descripcion: "Punta de parra tiene el tunel mas hermoso que sus en clenques cerebrelos podr{ian procesar, lo mejor del mundo mundial"
     },
     {
         position: {

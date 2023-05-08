@@ -1,13 +1,26 @@
-const ModalInfo = ({nombre, descripcion, foto}) => {
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+
+
+const ModalInfo = ({nombre, descripcion, foto, audio}) => {
 
     return (
         <div className="modal-info"  data-aos="fade-left">
             <section className='imagenModal'>
                 <img className="bg-modal" src={foto} alt="" />
-                <p>Playa de Bellavista</p>
+                <p>{nombre}</p>
             </section>
             <section className='bodyModal'>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi </p>
+                <p>{descripcion} </p>
+            </section>
+
+            <section className="player-section">
+                <AudioPlayer
+                    autoPlay
+                    src={audio}
+                    onPlay={e => console.log("onPlay")}
+                    // other props here
+                />
             </section>
 
         </div>
