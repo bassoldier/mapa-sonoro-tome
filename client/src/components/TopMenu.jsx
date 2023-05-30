@@ -9,7 +9,7 @@ const TopMenu = () => {
                 {
                     routes.map((route, index) =>{
                         return( 
-                            <Link key={index} to={route.path}>
+                            <Link className={`${window.location.pathname == route.path ? "active" : ""}`} key={index} to={route.path}>
                                 <i className="fas fa-tachometer-alt"></i>
                                 <span>{route.title}</span>
                             </Link>

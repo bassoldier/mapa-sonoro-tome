@@ -8,8 +8,8 @@ import { initialMarkers } from "../data/data";
 const MapComponent = ({id_name}) => {
     const [info, setInfo] = useState({"active" : false, "id_marker": null, "descripcion": "Descripcion test", "imagen": "", "audio": "", "titulo": ""});
     const [center, setCenter] = useState({
-        lat: -36.6181625,
-        lng: -72.9964699
+        lat: -36.5681325,
+        lng: -72.9950400
     });
 
 
@@ -20,9 +20,9 @@ const MapComponent = ({id_name}) => {
     const containerStyle = {
         width: "100%",
         height: "600px",
-        disableDefaultUI: false,
+        disableDefaultUI: true,
         mapTypeId: "hybrid",
-        
+  
 
     }
 
@@ -76,6 +76,8 @@ const MapComponent = ({id_name}) => {
                     center={center} 
                     zoom={11.7}
                     onClick={mapClicked}
+                    clickableIcons={false}
+                    mapTypeId="satellite"
                 >
                     
                     {markers.map((marker, index) => (

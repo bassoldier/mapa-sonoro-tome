@@ -96,7 +96,7 @@ header .navMenu a{
 
 }
 
-header .navMenu a:hover{
+header .navMenu a:hover, header .navMenu a.active{
 
   color: var(--action-dark);
 
@@ -128,6 +128,22 @@ header .navMenu a:hover{
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 6%;
+     object-position: 6%;
+  border-radius: 50px;
+  /*filter: brightness(0.7);
+  background: radial-gradient(45.92% 45.92% at 50% 50%, rgba(0, 0, 0, 0.4032) 0%, rgba(0, 0, 0, 0) 85.76%);*/
+}
+
+.bg-profile-pablo {
+
+  width: 100%;
+  height: 100%;
+  top: -10px;
+  /*bottom: 10px;*/
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
@@ -199,14 +215,15 @@ header .navMenu a:hover{
   background: linear-gradient(180deg, #D55565 0%, #D55565 67.98%, #E46474 100%);
   box-shadow: 0px 8px 43px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
+  border-color: var(--action-dark);
   font-size: 15px;
   line-height: 120%;
   text-align: center;
   color: var(--ink-light);
   font-weight: 400;
   
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
 } 
 
 .btn-primary:hover{
@@ -363,6 +380,54 @@ footer .items .cards .card{
   height: var(--height-hero);
   left: 0px;
   top: 0px;
+}
+
+.heroAbout div.parrafo-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 39px;
+
+  width: 45%;
+  height: 411px;
+
+  color: var(--ink-light);
+}
+
+.heroAbout div.ilustracion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 39px;
+
+  width: 55%;
+  height: 573px;
+}
+
+.heroAbout div.ilustracion .bg{
+  
+  
+
+  width: 100%;
+  height: 573px;
+}
+
+.parrafo-div h1{
+
+  font-weight: 700;
+  line-height: 120%;
+
+}
+
+
+.parrafo-div p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
 }
 
 .imagenModal{
