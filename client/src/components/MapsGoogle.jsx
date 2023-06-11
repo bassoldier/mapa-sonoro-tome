@@ -8,7 +8,7 @@ import { initialMarkers } from "../data/data";
 const MapComponent = ({id_name}) => {
     const [info, setInfo] = useState({"active" : false, "id_marker": null, "descripcion": "Descripcion test", "imagen": "", "audio": "", "titulo": ""});
     const [center, setCenter] = useState({
-        lat: -36.5681325,
+        lat: -36.5981325,
         lng: -72.9950400
     });
 

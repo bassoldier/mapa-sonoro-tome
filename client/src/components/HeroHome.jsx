@@ -8,10 +8,10 @@ const HeroHome = () => {
             {/*<img className="bg" src={fondo} alt="" />*/}
             <div>
                 <h1 data-aos="fade-up">
-                    Tomé quiere hablarte
+                    Places Talks
                 </h1>
                 <p data-aos="fade-up">
-                    Escucha cada rincón, reconoce sus sonidos y experimenta las emociones
+                    Busca tus audífonos y explora paisajes sonoros.
                 </p>
                 <ButtonHero  text = "Comenzar" isLink={false} link="mapa_principal" />
             </div>

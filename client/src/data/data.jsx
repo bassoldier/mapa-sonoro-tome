@@ -1,14 +1,16 @@
 import casaPiedra from "./../assets/img/locations/casa_de_piedra.jpg"
-import aves from "./../assets/img/locations/aves.jpg"
 import esquina from "./../assets/img/locations/esquina.jpg"
 import explanada from "./../assets/img/locations/explanada.jpg"
 import morro from "./../assets/img/locations/morro.jpg"
 import plaza from "./../assets/img/locations/plaza.jpg"
 
+import tunelpuntaparra from "./../assets/img/locations/tunelpuntaparra.jpg"
+import lostilos from "./../assets/img/locations/lostilos.jpg"
+import playabellavista from "./../assets/img/locations/bellavista.jpg"
+import playapuntaparra from "./../assets/img/locations/playapuntaparra.jpg"
+import tunelcentenario from "./../assets/img/locations/tunelcentenario.jpg"
 
 
-import audio_1 from "./../assets/audio/idea_1.mp3"
-import audio_2 from "./../assets/audio/idea_2.mp3"
 import TUNELPTADEPARRAMEZCLADO from "./../assets/audio/TUNELPTADEPARRAMEZCLADO.wav"
 import LOSTILOSMEZCLADO from "./../assets/audio/LOSTILOSMEZCLADO.wav"
 import PLAYABELLAVISTAMEZCLADO from "./../assets/audio/PLAYABELLAVISTAMEZCLADO.wav"
@@ -90,7 +92,7 @@ export const initialMarkers = [
         },
         label: { color: "white", text: "Túnel de Punta de Parra" },
         draggable: false,
-        image: plaza,
+        image: tunelpuntaparra,
         audio: TUNELPTADEPARRAMEZCLADO,
         titulo: "Túnel de Punta de Parra",
         descripcion: "Este túnel fue inaugurado en el año 1914, y buscaba prolongar la línea ferroviaria de la época uniendo Lirquén y Tomé. En la actualidad, este túnel es un atractivo turístico, debido a su antigüedad y por el hecho de poder cruzarlo. Por encima de este, existe un camino que puede dar a la playa ( Playa Hamburguesa )  que está entre ambos extremos del túnel y que es zona de escalada deportiva, también se puede llegar a los fuertes de Punta de Parra mediante este camino."
@@ -102,7 +104,7 @@ export const initialMarkers = [
         },
         label: { color: "white", text: "Río los Tilos" },
         draggable: false,
-        image: plaza,
+        image: lostilos,
         audio: LOSTILOSMEZCLADO,
         titulo: "Río Los Tilos",
         descripcion: "El río los tilos, también llamado estero bellavista, es un sector que históricamente ha sido una zona muy visitada en la temporada de verano, esto debido a su fácil acceso. Su nombre radica en que este lugar está rodeado de árboles de tilo además de otras especies, aunque en su mayoría hay pinos. Si se sigue río arriba, se puede llegar al tranque, y puente colgante, este último siendo una caminata de un grado mayor en comparación a las anteriores."
@@ -114,19 +116,19 @@ export const initialMarkers = [
         },
         label: { color: "white", text: "Playa de Bellavista" },
         draggable: false,
-        image: plaza,
+        image: playabellavista,
         audio: PLAYABELLAVISTAMEZCLADO,
         titulo: "Playa de Bellavista",
         descripcion: "Esta playa puede considerarse como una de las más populares de Tomé, destaca la gran afluencia de gente durante la temporada de verano. Está situada en la entrada de la comuna y está muy cercana a la fábrica Oveja Bellavista Tomé, otro atractivo turístico característico de la zona. En los alrededores destacan los locales de esparcimiento que presentan una variedad de productos para ofrecer."
     },
     {
        position: {
-            lat: -36.6694666,
-            lng: -72.9948031
+            lat: -36.670377,
+            lng: -72.982405
         },
         label: { color: "white", text: "Playa del Túnel de Punta de Parra" },
         draggable: false,
-        image: plaza,
+        image: playapuntaparra,
         audio: PLAYAPTADEPARRAMEZCLADO,
         titulo: "Playa del Túnel de Punta de Parra",
         descripcion: "La playa del túnel de punta de parra está situada en el mismo sector del túnel de esta locación. Su acceso suele ser a pie mediante una caminata de aproximadamente 40 minutos desde el sector de bellavista o en bicicleta, suele ser común ver gente realizando estos 2 tipos de deporte. Es también en la temporada de verano, un lugar donde se puede ver gente acampando. Su paisaje destaca por estar rodeado de bosque de manera muy cercana a la playa misma."
@@ -138,7 +140,7 @@ export const initialMarkers = [
         },
         label: { color: "white", text: "Túnel de Centenario" },
         draggable: false,
-        image: plaza,
+        image: tunelcentenario,
         audio: TUNELCENTENARIOMEZCLA,
         titulo: "Túnel de Centenario",
         descripcion: "Este túnel fue inaugurado en el año 1914, y buscaba extender la línea ferroviaria de Tomé prolongandose  hacia Coliumo, Dichato y Pingueral. En la actualidad este sector tiene un atractivo turístico, puesto que se puede cruzar e incluso subir. Por arriba del Túnel hay un estero y un sector rodeado de árboles, siendo un lugar comúnmente visitado durante la temporada de verano."

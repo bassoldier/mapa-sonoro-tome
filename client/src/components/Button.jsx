@@ -1,6 +1,6 @@
 export const ButtonHero = ({text, isLink, link}) =>{
     const handleClick = (isLink, link) =>{
-        console.log("sdadasda");
+       
         if(isLink){
             
         }

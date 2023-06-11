@@ -103,7 +103,7 @@ header .navMenu a:hover, header .navMenu a.active{
 }
 
 .heroHome {
-  --height-hero: 568px;
+  --height-hero: 100vh;
   background: radial-gradient(45.92% 45.92% at 50% 50%, rgba(0, 0, 0, 0.4032) 0%, rgba(0, 0, 0, 0) 85.76%), url('/fondo_hero.jpg');
   /*background: url('src/assets/img/fondo_hero.jpg');*/
   background-size: cover;
@@ -208,7 +208,7 @@ header .navMenu a:hover, header .navMenu a.active{
   gap: 10px;
 
   width: 150px;
-  height: 75px;
+  height: 50px;
 
   /* DARK BUTTON FILL */
 
